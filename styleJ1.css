@@ -1,0 +1,213 @@
+html {
+    max-width: 1920px !important;
+    margin: 0 auto !important;
+}
+
+body.bodyArea {
+    box-sizing: border-box;
+    margin: 0 auto !important;
+    padding: 0;
+    max-width: 1200px !important;
+    background-color: #1c5664;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    z-index: 2;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    top: 2.5rem;
+    left: 20%;
+    text-decoration: none;
+}
+
+.logoSpan {
+    font-family: cursive;
+}
+
+.heroHeading {
+    padding: 0 2% 10px 2%;
+    width: 90%;
+    text-align: center;
+}
+
+.carousel {
+    /* max-width: 1200px; */
+    padding: 10% 0;
+    text-align: center;
+    background-color: #ffc0cb00;
+    padding-top: 2%;
+}
+
+.carousel-inner {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-inner>.item {
+    position: relative;
+    display: none;
+    animation: 0.5s ease-in-out;
+}
+
+.carousel-inner>.active,
+.carousel-inner>.next {
+    display: block;
+}
+
+.carousel-inner>.next {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.carousel-inner>.to-left {
+    animation-name: left;
+}
+
+.carousel-inner>.from-right {
+    animation-name: right;
+}
+
+.carousel-inner>.to-right {
+    animation-name: right;
+    animation-direction: reverse;
+}
+
+.carousel-inner>.from-left {
+    animation-name: left;
+    animation-direction: reverse;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+img {
+    padding: 10px 20px;
+    margin: 30px auto;
+    max-height: 60%;
+    max-width: 60%;
+}
+
+.author {
+    margin: 0;
+    opacity: 0.5;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    display: flex;
+    z-index: 9999;
+    cursor: pointer;
+    justify-content: space-evenly;
+    /* margin-top: 25%; */
+}
+
+.carousel-control.right {
+    right: 0;
+    left: auto;
+}
+
+.carousel-control>.arrow {
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjYiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyNiAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+QXJyb3c8L3RpdGxlPjxwYXRoIGQ9Ik0yNS42IDEwLjk3NGwtOC41MyA4LjYyYTEuMzYgMS4zNiAwIDAgMS0xLjkzNS4wMDMgMS4zODcgMS4zODcgMCAwIDEtLjAwMi0xLjk1bDYuMjAxLTYuMjY4SDEuMzY4QTEuMzc0IDEuMzc0IDAgMCAxIDAgMTBjMC0uNzYyLjYxMy0xLjM4IDEuMzY4LTEuMzhoMTkuOTY2bC02LjItNi4yNjdhMS4zODcgMS4zODcgMCAwIDEgLjAwMS0xLjk1IDEuMzYgMS4zNiAwIDAgMSAxLjkzNi4wMDJsOC41MyA4LjYyMWMuNTMyLjUzOC41MzIgMS40MSAwIDEuOTQ4IiBmaWxsPSIjRkZGRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=") center center no-repeat;
+    background-size: 26px 20px;
+    transform: translateY(-50%);
+}
+
+.carousel-control>.arrow:hover {
+    opacity: 0.8;
+}
+
+.carousel-control>.arrow.left {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.carousel-control>.arrow.right {
+    right: 50%;
+}
+
+.carousel-indicators {
+    /* position: absolute; */
+    bottom: 20px;
+    left: 50%;
+    padding-left: 0;
+    /* margin: 0 auto; */
+    list-style: none;
+    /* transform: translateX(-50%); */
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+}
+
+.carousel-indicators li.active {
+    background-color: #FFFFFF;
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+@keyframes left {
+    from {
+        left: 0;
+    }
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes right {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .heroHeading {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 1rem;
+        justify-content: center;
+        font-size: 2rem;
+    }
+    a.backbtn::after,
+    a.backbtn::before {
+        clear: both;
+    }
+    a.backBtn {
+        float: none;
+        padding: 0.5% 1%;
+        width: 20%;
+        text-align: center;
+    }
+}

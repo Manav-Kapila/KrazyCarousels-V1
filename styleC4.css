@@ -1,0 +1,28 @@
+body.bodyArea {
+    padding-top: 5%;
+}
+
+.captions {
+    color: white;
+    text-align: center;
+    z-index: 999999;
+    margin: 0 auto;
+    padding: 0 10%;
+    -webkit-text-stroke: 0.1px black;
+}
+
+.captionHeading {
+    font-size: 22px;
+}
+
+.captionPara {
+    font-size: 18px;
+}
+
+.slider {
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow-x: hidden;
+    padding-bottom: 10%;
+}

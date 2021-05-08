@@ -1,0 +1,15 @@
+.captions {
+    color: white;
+    text-align: center;
+    z-index: 999999;
+    margin: 0 auto;
+    -webkit-text-stroke: 0.1px black;
+}
+
+.captionHeading {
+    font-size: 22px;
+}
+
+.captionPara {
+    font-size: 18px;
+}
